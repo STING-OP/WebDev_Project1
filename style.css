@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: rgb(0, 0, 0);
+  font-size: 23px;
+  padding: 0px !important;
+}
+
+li a {
+  color: white !important;
+}
+
+.navbar-nav>li>.dropdown-menu {
+  background-color: black;
+}
+
+.navbar-nav>li>.dropdown-menu>a:hover {
+  background-color: rgb(26, 24, 24);
+}
+
+.modal-footer {
+  border-top: 0px !important;
+}
+
+.modal-header {
+  border-bottom: 0px !important;
+}
+
+.modal {
+  padding-top: 110px;
+  backdrop-filter: blur(8px);
+}
+
+.modal-content {
+  background-color: rgba(95, 83, 83, 0.514) !important;
+  color: white !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .home {
+    padding-left: 0px !important;
+  }
+}
+
+.newCollection {
+  margin-top: 80px !important;
+}
+
+.newItems {
+  margin-top: 196px !important;
+}
+
+.newArrival {
+  margin-top: 126px !important;
+}
+
+.lorem {
+  font-size: 20px;
+  padding-top: 15px;
+  font-family: Poppins;
+  font-weight: 400;
+  color: #0c0116;
+  line-height: 24px;
+}
+
+.newCOl1 {
+  box-shadow: 5px 8px 5px 10px grey !important;
+  height: 500px !important;
+}
+
+.newBtn {
+  transform: translate(-48px, -5px) !important;
+  -webkit-transform: translate(-48px, -5px) !important;
+  -moz-transform: translate(-48px, -5px) !important;
+  -ms-transform: translate(-48px, -5px) !important;
+  -o-transform: translate(-48px, -5px) !important;
+}
+
+.wmnSports {
+  padding-left: 200px !important;
+}
+
+.sale {
+  padding-left: 200px !important;
+  padding-top: 80px !important;
+}
+
+.menSports {
+  padding-left: 218px !important;
+}
+
+.star {
+  list-style-type: none;
+}
+
+.star>li {
+  display: inline-block;
+  transform: translateX(173px);
+  -webkit-transform: translateX(173px);
+  -moz-transform: translateX(173px);
+  -ms-transform: translateX(173px);
+  -o-transform: translateX(173px);
+}
+
+.price {
+  padding-left: 246px;
+}
+
+.img3 {
+  padding: 70px !important;
+}
+
+.card {
+  box-shadow: 2px 8px 8px black;
+}
+
+.jump {
+  padding: 20px 45px;
+  border: unset;
+  border-radius: 25px;
+  color: white;
+  z-index: 1;
+  background: black;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+  overflow: hidden;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.jump::before {
+  content: "";
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  background-color: #ffc72c;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.jump:hover {
+  color: black;
+}
+
+.jump:hover::before {
+  width: 100%;
+}
+
+.container-fluid {
+  padding-left: 0px !important;
+
+  padding-right: 0px !important;
+}
+
+.cardBtn {
+  background-color: black !important;
+  color: white !important;
+}
