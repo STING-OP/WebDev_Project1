@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- css stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- header start-->
+  <div class="container-sm">
+    <nav class="navbar navbar-expand-xl navbar-dark">
+      <a class="navbar-brand pl-5" href="index.html"><img src="./images/footer-logo.png" alt="logo"></a>
+      <button class="navbar-toggler d-xl-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active home" style="padding-left: 110px">
+            <a class="nav-link pl-5" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pl-5" href="#">Collection</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle pl-5" href="#" id="dropdownId" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Shoes</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+              <a class="dropdown-item" href="#">Men</a>
+              <a class="dropdown-item" href="#">Women</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pl-5" href="#">Contact</a>
+          </li>
+          <li class="nav-item pl-5" style="padding-top: 5px;">
+            <a href="#">
+              <img src="./images/search_icon.png" alt="search">
+            </a>
+          </li>
+          <li class="nav-item pl-5" style="padding-top: 5px;">
+            <a href="#">
+              <img src="./images/shop_icon.png" alt="search">
+            </a>
+          </li>
+          <li class="nav-item pl-5" style="padding-top: 5px;">
+            <button type="button" class="btn" style="background-color: #e50914; color: white;" data-toggle="modal"
+              data-target="#myModal">
+              Login
+            </button>
+            <!-- The Modal -->
+            <div class="modal fade" id="myModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <form method="post" action="login.php">
+                      <div class="form-group">
+                        <label for="usr">Email or phone number</label>
+                        <input type="text" class="form-control" id="usr" name="login">
+                      </div>
+                      <div class="form-group">
+                        <label for="pwd">Password</label>
+                        <input type="password" class="form-control" id="pwd" name="password">
+                      </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!-- Header end -->
+
+  <!-- carousel Banner -->
+  <div id="carouselId" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselId" data-slide-to="1"></li>
+      <li data-target="#carouselId" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+        <img src="./images/carousel1.png" class="img-fluid" alt="First slide"
+          style="height: 630px !important; width: 100%;">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Title</h3>
+          <p>Description</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./images/carousel1.png" alt="Second slide" class="img-fluid"
+          style="height: 630px !important; width: 100%;">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Title</h3>
+          <p>Description</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./images/carousel1.png" alt="Third slide" class="img-fluid"
+          style="height: 630px !important; width: 100%;">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Title</h3>
+          <p>Description</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!-- carousel banner end -->
+
+  <!-- New collection Section -->
+  <div class="container newCollection">
+    <h2 style="color: black;"><b>New Collection</b></h2>
+    <h4 class="lorem">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+      enim ad minim <br>veniam, quis nostrud exercitation </h4>
+  </div>
+  <div class="container pt-5">
+    <div class="row">
+      <div class="col-lg-6 newCOl1">
+        <button type="button" class="newBtn"
+          style="background-color: black; padding: 10px 30px;color: white;">New</button>
+        <img src="./images/shoes-img1.png" class="img-fluid mx-auto d-block" alt="img1">
+        <h5 style="font-stretch: ultra-condensed;" class="pt-5 wmnSports"> Women Sports</h5>
+        <strong class="price" style="color: #e72e4c; font-size: 20px;"> 500 &#x20B9;</strong>
+        <ul class="star pl-5 pt-2">
+          <li><a href="#"><img src="images/star-icon.png" class="img-fluid"></a></li>
+          <li><a href="#"><img src="images/star-icon.png" class="img-fluid"></a></li>
+          <li><a href="#"><img src="images/star-icon.png" class="img-fluid"></a></li>
+          <li><a href="#"><img src="images/star-icon.png" class="img-fluid"></a></li>
+          <li><a href="#"><img src="images/star-icon.png" class="img-fluid"></a></li>
+        </ul>
+      </div>
+      <div class="col-lg-6 newCOl1" style="padding-top: 100px; margin-top: 80px; background-color: #ededed;">
+        <img src="./images/shoes-img2.png" class="img-fluid mx-auto d-block" alt="img 2">
+        <h5 style="font-stretch: ultra-condensed;" class="pt-5 menSports"> Men Sports</h5>
+        <strong class="price" style="color: #2e2fdd; font-size: 20px;"> 400 &#x20B9;</strong>
+        <ul class="star pl-5 pt-2">
+          <li><a href="#"><img src="images/star-icon.png" class="img-fluid"></a></li>
+          <li><a href="#"><img src="images/star-icon.png" class="img-fluid"></a></li>
+          <li><a href="#"><img src="images/star-icon.png" class="img-fluid"></a></li>
+          <li><a href="#"><img src="images/star-icon.png" class="img-fluid"></a></li>
+          <li><a href="#"><img src="images/star-icon.png" class="img-fluid"></a></li>
+        </ul>
+        <center><button
+            style="background-color: #e72e4c; border: none; padding: 12px 25px;color: white; font-size: 25px;margin-top: 40px; margin-left: 35px;">Show
+            more</button></center>
+      </div>
+    </div>
+  </div>
+  <!-- New collection end -->
+
+  <!-- Racing Boots -->
+  <div class="container newItems">
+    <h2 style="color: black;"><b>Racing Boots</b></h2>
+    <h4 class="lorem">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+    </h4>
+  </div>
+  <div class="container pt-5">
+    <div class="row " style="background-color: #eae7e7;height: 580px;">
+      <div class="col-6 img3">
+        <img src="./images/shoes-img3.png" alt="img3">
+      </div>
+      <div class="col-6">
+        <b>
+          <h5 style="font-stretch: ultra-condensed; color: #e72e4c; font-size: 80px;" class="sale"> Sale <span
+              style="color: black;">Going</span> On !</h5>
+        </b>
+        <center><button
+            style="background-color:  #e72e4c; border: none; padding: 12px 25px;color: white; font-size: 25px;margin-top: 5px; margin-left: 35px;">Show
+            more</button></center>
+      </div>
+    </div>
+  </div>
+  <!-- Racing Boots end -->
+
+  <!-- New arrival -->
+  <div class="container newArrival">
+    <h2 style="color: black;"><b>New Arrivals Products</b></h2>
+    <h4 class="lorem">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+    </h4>
+  </div>
+  <div style="background-color: #ff4e5b;
+    margin-top: 75px;">
+    <div class="container pb-5" style="padding-top: 95px;">
+      <div class="card-deck">
+        <div class="card">
+          <img class="card-img-top mx-auto mt-5" src="./images/shoes-img2.png" style="height: 200px; width:170px;"
+            alt="img4">
+          <div class="card-body">
+            <h4 class="card-title" style="text-align: center; color: #e72e4c;">500 &#x20B9</h4>
+            <center><a href="#" class="btn cardBtn">Show more</a></center>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top mx-auto mt-5" src="./images/shoes-img5.png" style="height: 200px; width:170px;"
+            alt="img4">
+          <div class="card-body">
+            <h4 class="card-title" style="text-align: center; color: #e72e4c;">350 &#x20B9</h4>
+            <center><a href="#" class="btn cardBtn">Show more</a></center>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top mx-auto mt-5" src="./images/shoes-img1.png" style="height: 200px; width:170px;"
+            alt="img4">
+          <div class="card-body">
+            <h4 class="card-title" style="text-align: center; color: #e72e4c;">1000 &#x20B9</h4>
+            <center><a href="#" class="btn cardBtn">Show more</a></center>
+          </div>
+        </div>
+      </div>
+      <div class="card-deck pt-5">
+        <div class="card">
+          <img class="card-img-top mx-auto mt-5" src="./images/shoes-img7.png" style="height: 200px; width:170px;"
+            alt="img4">
+          <div class="card-body">
+            <h4 class="card-title" style="text-align: center; color: #e72e4c;">250 &#x20B9</h4>
+            <center><a href="#" class="btn cardBtn">Show more</a></center>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top mx-auto mt-5" src="./images/shoes-img8.png" style="height: 200px; width:170px;"
+            alt="img4">
+          <div class="card-body">
+            <h4 class="card-title" style="text-align: center; color: #e72e4c;">700 &#x20B9</h4>
+            <center><a href="#" class="btn cardBtn">Show more</a></center>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top mx-auto mt-5" src="./images/shoes-img9.png" style="height: 200px; width:170px;"
+            alt="img4">
+          <div class="card-body">
+            <h4 class="card-title" style="text-align: center; color: #e72e4c;">550 &#x20B9</h4>
+            <center><a href="#" class="btn cardBtn">Show more</a></center>
+          </div>
+        </div>
+      </div>
+      <center><button rtype="button"
+          style="background-color: black; border: none; padding: 10px 28px;color: white; font-size: 20px;margin-top: 50px; margin-left: 35px;">Show
+          more</button></center>
+    </div>
+  </div>
+  <div class="container-fluid" style="margin-top: -50.02px;">
+    <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" height="200px" version="1.1" class="w-100"
+      xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(104.732, 4.524, 4.524, 1)" offset="0%"></stop><stop stop-color="rgba(40.982, 2.464, 33.326, 1)" offset="100%"></stop></linearGradient>
+      </defs>
+      <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+        d="M0,120L15,117.5C30,115,60,110,90,95C120,80,150,55,180,42.5C210,30,240,30,270,42.5C300,55,330,80,360,75C390,70,420,35,450,17.5C480,0,510,0,540,0C570,0,600,0,630,15C660,30,690,60,720,67.5C750,75,780,60,810,50C840,40,870,35,900,47.5C930,60,960,90,990,105C1020,120,1050,120,1080,112.5C1110,105,1140,90,1170,77.5C1200,65,1230,55,1260,62.5C1290,70,1320,95,1350,95C1380,95,1410,70,1440,52.5C1470,35,1500,25,1530,20C1560,15,1590,15,1620,15C1650,15,1680,15,1710,15C1740,15,1770,15,1800,15C1830,15,1860,15,1890,22.5C1920,30,1950,45,1980,55C2010,65,2040,70,2070,65C2100,60,2130,45,2145,37.5L2160,30L2160,150L2145,150C2130,150,2100,150,2070,150C2040,150,2010,150,1980,150C1950,150,1920,150,1890,150C1860,150,1830,150,1800,150C1770,150,1740,150,1710,150C1680,150,1650,150,1620,150C1590,150,1560,150,1530,150C1500,150,1470,150,1440,150C1410,150,1380,150,1350,150C1320,150,1290,150,1260,150C1230,150,1200,150,1170,150C1140,150,1110,150,1080,150C1050,150,1020,150,990,150C960,150,930,150,900,150C870,150,840,150,810,150C780,150,750,150,720,150C690,150,660,150,630,150C600,150,570,150,540,150C510,150,480,150,450,150C420,150,390,150,360,150C330,150,300,150,270,150C240,150,210,150,180,150C150,150,120,150,90,150C60,150,30,150,15,150L0,150Z">
+      </path>
+    </svg> 
+  </div>
+  <!-- New arrival end -->
+
+  <!-- Jump to -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-sm-4">
+        <center><button type="button" class="jump"> Kids </button></center>
+      </div>
+      <div class="col-sm-4">
+        <center><button type="button" class="jump"> Men </button></center>
+      </div>
+      <div class="col-sm-4">
+        <center><button type="button" class="jump"> Women </button></center>
+      </div>
+    </div>
+  </div>
+  <!-- Jump to End -->
+</body>
+
+</html>
