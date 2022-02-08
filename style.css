@@ -114,10 +114,6 @@ li a {
   padding: 70px !important;
 }
 
-.card {
-  box-shadow: 2px 8px 8px black;
-}
-
 .jump {
   padding: 20px 45px;
   border: unset;
@@ -178,4 +174,19 @@ li a {
 .cardBtn {
   background-color: black !important;
   color: white !important;
+}
+
+.footer {
+  margin-top: 120px;
+  color: white;
+}
+
+.footNav {
+  background-color: #FF003F;
+}
+
+.footInfo {
+  color: white;
+  background-color: #FF003F;
+  padding-top: 60px;
 }
