@@ -75,7 +75,7 @@
               Login
             </button>
             <!-- The Modal -->
-            <div class="modal fade" id="myModal">
+            <div class="modal loginModal fade" id="myModal">
               <div class="modal-dialog">
                 <div class="modal-content">
 
@@ -108,6 +108,48 @@
     </nav>
   </div>
   <!-- Header end -->
+
+  <!-- Assistant start -->
+  <button type="button" title="CLick one me, for Help!" class="assist" data-toggle="modal" data-target="#chat">
+    <img src="./images/robo1.png" class="img-fluid" alt="robo">
+  </button>
+
+  <div class="modal chatWindow fade" id="chat">
+    <div class="modal-dialog">
+      <div class="modal-content w-75">
+
+        <!--Header -->
+        <div class="modal-header assistHead bg-primary d-block">
+          <button type="button" class="close closeChat pr-4" style="padding-top: 19px;"
+            data-dismiss="modal">&times;</button>
+          <center>
+            <h4 style="font-family: Georgia,Times,Times New Roman,serif; padding: 18px;">Hey, how can I help you ?</h4>
+          </center>
+          <div class="container-fluid bg-light" style="height: 500px; width: 100%;">
+
+          </div>
+        </div>
+
+        <!--footer -->
+        <div class="modal-footer bg-light">
+          <div class="input-group mx-auto">
+            <label for="chatTxt"></label>
+            <input type="text" class="form-control" name="chatAssist" id="chatTxt" placeholder="Type here......">
+            <div class="input-group-append">
+              <button type="submit" class="pl-2 send"><i class="material-icons"
+                  style="font-size:38px;color:#087cfc">send</i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </li>
+  </ul>
+  </div>
+  </nav>
+  </div>
+  <!-- Assistant End -->
 
   <!-- carousel Banner -->
   <div id="carouselId" class="carousel slide" data-ride="carousel">
@@ -233,7 +275,7 @@
             alt="img4">
           <div class="card-body">
             <h4 class="card-title" style="text-align: center; color: #e72e4c;">500 &#x20B9</h4>
-            <center><a href="#" class="btn cardBtn">Show more</a></center>
+            <center><a href="#" class="btn cardBtn">See more</a></center>
           </div>
         </div>
         <div class="card">
@@ -241,7 +283,7 @@
             alt="img4">
           <div class="card-body">
             <h4 class="card-title" style="text-align: center; color: #e72e4c;">350 &#x20B9</h4>
-            <center><a href="#" class="btn cardBtn">Show more</a></center>
+            <center><a href="#" class="btn cardBtn">See more</a></center>
           </div>
         </div>
         <div class="card">
@@ -249,7 +291,7 @@
             alt="img4">
           <div class="card-body">
             <h4 class="card-title" style="text-align: center; color: #e72e4c;">1000 &#x20B9</h4>
-            <center><a href="#" class="btn cardBtn">Show more</a></center>
+            <center><a href="#" class="btn cardBtn">See more</a></center>
           </div>
         </div>
       </div>
@@ -259,7 +301,7 @@
             alt="img4">
           <div class="card-body">
             <h4 class="card-title" style="text-align: center; color: #e72e4c;">250 &#x20B9</h4>
-            <center><a href="#" class="btn cardBtn">Show more</a></center>
+            <center><a href="#" class="btn cardBtn">See more</a></center>
           </div>
         </div>
         <div class="card">
@@ -267,7 +309,7 @@
             alt="img4">
           <div class="card-body">
             <h4 class="card-title" style="text-align: center; color: #e72e4c;">700 &#x20B9</h4>
-            <center><a href="#" class="btn cardBtn">Show more</a></center>
+            <center><a href="#" class="btn cardBtn">See more</a></center>
           </div>
         </div>
         <div class="card">
@@ -275,13 +317,16 @@
             alt="img4">
           <div class="card-body">
             <h4 class="card-title" style="text-align: center; color: #e72e4c;">550 &#x20B9</h4>
-            <center><a href="#" class="btn cardBtn">Show more</a></center>
+            <center><a href="#" class="btn cardBtn">See more</a></center>
           </div>
         </div>
       </div>
-      <center><button rtype="button"
-          style="background-color: black; border: none; padding: 10px 28px;color: white; font-size: 20px;margin-top: 50px; margin-left: 35px;">Show
-          more</button></center>
+      <center class="pt-5"><button class="learn-more">
+          <span class="circle" aria-hidden="true">
+            <span class="icon arrow"></span>
+          </span>
+          <span class="button-text">Shop Now</span>
+        </button></center>
     </div>
   </div>
   <div class="container-fluid" style="margin-top: -50.02px;">
