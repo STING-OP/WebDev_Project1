@@ -1,29 +1,39 @@
 <?php
-$mailPhone= $_POST['usr'];
-$password= $_POST['pass'];
+$mailPhone = $_POST['usr'];
+$password = $_POST['pass'];
 $pMailErr = $pwdErr = "";
 
 // Required field
-if(isset($_POST['Login'])){
-    if(empty($mailPhone)){
-        $pMailErr= "Phone or mail required";
+if (isset($_POST['Login'])) {
+    if (empty($mailPhone)) {
+        $pMailErr = "Phone or Email required";
         echo $pMailErr . "<br>";
+    } else {
+        $mailPhone = test_input($mailPhone);
+        if (!filter_var($mailPhone, FILTER_VALIDATE_EMAIL)) {
+            $pMailErr = "Invalid Email format";
+            echo $pMailErr . "<br><br>";
+        }
     }
-    else{
-        $mailPhone= test_input($mailPhone);
-    }
-    if(empty($password)){
-        $pwdErr= "Password required"; 
+    if (empty($password)) {
+        $pwdErr = "Password required";
         echo $pwdErr . "<br><br><br>";
-        echo"<a href='index.html'> Back to Login Page</a>";       
-    }
-    else{
-        $password= test_input($password);
+        echo "<a href='index.html'> Back to Login Page</a>";
+    } else {
+        $password = test_input($password);
+        if (!preg_match("/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/", $password)) {
+            $pwdErr = "Password Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters";
+            echo $pwdErr . "<br><br><br>";
+            echo "<a href='index.html'> Back to Login Page</a>";;
+        }
     }
 }
-function test_input($data) {
+function test_input($data)
+{
     $data = trim($data);
     $data = stripslashes($data);
     $data = htmlspecialchars($data);
     return $data;
-  }
+}
+
+?>
