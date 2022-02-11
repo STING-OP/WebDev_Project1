@@ -21,7 +21,7 @@ if (isset($_POST['Login'])) {
         echo "<a href='index.html'> Back to Login Page</a>";
     } else {
         $password = test_input($password);
-        if (!preg_match("/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/", $password)) {
+        if (!preg_match('/^(?=.*[0-9])(?=.*[A-Z]).{8,20}$/', $password)) {
             $pwdErr = "Password Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters";
             echo $pwdErr . "<br><br><br>";
             echo "<a href='index.html'> Back to Login Page</a>";;
