@@ -1,7 +1,8 @@
 <?php
 $mailPhone = $_POST['usr'];
 $password = $_POST['pass'];
-$pMailErr = $pwdErr = "";
+$count= 0;
+$pMailErr =  $pwdErr = "";
 
 // Required field
 if (isset($_POST['Login'])) {
@@ -13,6 +14,7 @@ if (isset($_POST['Login'])) {
         if (!filter_var($mailPhone, FILTER_VALIDATE_EMAIL)) {
             $pMailErr = "Invalid Email format";
             echo $pMailErr . "<br><br>";
+            $count= $count+1;
         }
     }
     if (empty($password)) {
@@ -24,7 +26,8 @@ if (isset($_POST['Login'])) {
         if (!preg_match('/^(?=.*[0-9])(?=.*[A-Z]).{8,20}$/', $password)) {
             $pwdErr = "Password Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters";
             echo $pwdErr . "<br><br><br>";
-            echo "<a href='index.html'> Back to Login Page</a>";;
+            echo "<a href='index.html'> Back to Login Page</a>";
+            $count= $count+1;
         }
     }
 }
@@ -34,6 +37,23 @@ function test_input($data)
     $data = stripslashes($data);
     $data = htmlspecialchars($data);
     return $data;
+}
+if($count==0){
+    $db=   mysqli_connect('localhost','root','','userlogindata');
+    if($db){
+        $sql= "select EmailPhone, pass from loginrecord WHERE EmailPhone='".$mailPhone."' and pass='".$password."'";
+        $res=mysqli_query($db,$sql);
+        if($res){
+            echo "<script>window.location.href='index.html';</script>";
+        }
+        else{
+            echo "<script>alert('You have entered Wrong Cridentials')</script>";
+            echo "<script>window.location.href='index.html';</script>";
+            }
+    }
+    else{
+       die("Connection failed: " . mysqli_connect_error());
+    }
 }
 
 ?>
