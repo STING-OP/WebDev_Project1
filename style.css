@@ -1,13 +1,21 @@
 * {
-  box-sizing: border-box;
+  box-sizing: border-box !important;
   margin: 0;
   padding: 0;
 }
 
+body, html {
+  overflow-x: hidden;
+}
+
+.navConatiner {
+  background-color: black;
+}
+
 .navbar {
   background-color: rgb(0, 0, 0);
-  font-size: 23px;
-  padding: 0px !important;
+  font-size: 1.3rem;
+
 }
 
 li a {
@@ -21,6 +29,13 @@ li a {
 .navbar-nav>li>.dropdown-menu>a:hover {
   background-color: rgb(26, 24, 24);
 }
+
+@media screen and (min-width: 1200px) {
+  .home {
+    padding-left: 110px;
+  }
+}
+
 
 .modal-footer {
   border-top: 0px !important;
@@ -40,10 +55,22 @@ li a {
   color: white !important;
 }
 
-@media screen and (max-width: 1200px) {
-  .home {
-    padding-left: 0px !important;
+.carousel-item>img {
+  vertical-align: 0px;
+}
+
+@media screen and (max-width: 576px) {
+  .loginUl>li {
+    padding-top: 27px !important;
   }
+
+  .newCOl1 {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+    min-height: 100px !important;
+    float: right;
+  }
+
 }
 
 .newCollection {
@@ -72,16 +99,10 @@ li a {
   height: 500px !important;
 }
 
-.newBtn {
-  transform: translate(-48px, -5px) !important;
-  -webkit-transform: translate(-48px, -5px) !important;
-  -moz-transform: translate(-48px, -5px) !important;
-  -ms-transform: translate(-48px, -5px) !important;
-  -o-transform: translate(-48px, -5px) !important;
-}
 
-.wmnSports {
-  padding-left: 200px !important;
+.wmnSports, .menSports, .price {
+  display: flex;
+  justify-content: center;
 }
 
 .sale {
@@ -89,25 +110,10 @@ li a {
   padding-top: 80px !important;
 }
 
-.menSports {
-  padding-left: 218px !important;
-}
-
 .star {
   list-style-type: none;
-}
-
-.star>li {
-  display: inline-block;
-  transform: translateX(173px);
-  -webkit-transform: translateX(173px);
-  -moz-transform: translateX(173px);
-  -ms-transform: translateX(173px);
-  -o-transform: translateX(173px);
-}
-
-.price {
-  padding-left: 246px;
+  display: flex;
+  justify-content: center;
 }
 
 .img3 {
@@ -165,11 +171,7 @@ li a {
   width: 100%;
 }
 
-.container-fluid {
-  padding-left: 0px !important;
 
-  padding-right: 0px !important;
-}
 
 .cardBtn {
   background-color: #282936 !important;
@@ -309,4 +311,9 @@ button:hover .button-text {
 
 .chatWindow {
   padding-top: 20px !important;
+}
+
+.SvgContainer {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 }
