@@ -36,13 +36,13 @@
   <div class="container-sm">
     <nav class="navbar navbar-expand-xl navbar-dark">
       <a class="navbar-brand pl-5" href="index.html"><img src="./images/footer-logo.png" alt="logo"></a>
-      <button class="navbar-toggler d-xl-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
         aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="collapsibleNavId">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active home" style="padding-left: 110px">
+          <li class="nav-item active home">
             <a class="nav-link pl-5" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
@@ -162,26 +162,25 @@
       <div class="carousel-item active">
         <img src="./images/carousel1.png" class="img-fluid" alt="First slide"
           style="height: 630px !important; width: 100%;">
-        <div class="carousel-caption d-none d-md-block">
-          <h3>Title</h3>
-          <p>Description</p>
-        </div>
+        <!-- <div class="carousel-caption d-none d-md-block">
+        <button type="button" class="btn btn-outline-dark btn-lg">Visit</button>
+        </div> -->
       </div>
       <div class="carousel-item">
         <img src="./images/carousel1.png" alt="Second slide" class="img-fluid"
           style="height: 630px !important; width: 100%;">
-        <div class="carousel-caption d-none d-md-block">
+        <!-- <div class="carousel-caption d-none d-md-block">
           <h3>Title</h3>
           <p>Description</p>
-        </div>
+        </div> -->
       </div>
       <div class="carousel-item">
         <img src="./images/carousel1.png" alt="Third slide" class="img-fluid"
           style="height: 630px !important; width: 100%;">
-        <div class="carousel-caption d-none d-md-block">
+        <!-- <div class="carousel-caption d-none d-md-block">
           <h3>Title</h3>
           <p>Description</p>
-        </div>
+        </div> -->
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
@@ -201,15 +200,13 @@
     <h4 class="lorem">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
       enim ad minim <br>veniam, quis nostrud exercitation </h4>
   </div>
-  <div class="container pt-5">
+  <div class="container pt-5 d-flex justify-content-center">
     <div class="row">
-      <div class="col-lg-6 newCOl1">
-        <button type="button" class="newBtn"
-          style="background-color: black; padding: 10px 30px;color: white;">New</button>
-        <img src="./images/shoes-img1.png" class="img-fluid mx-auto d-block" alt="img1">
-        <h5 style="font-stretch: ultra-condensed;" class="pt-5 wmnSports"> Women Sports</h5>
+      <div class="col-md-6 newCOl1 p-sm-5">
+        <img src="./images/shoes-img1.png" class="img-fluid" alt="img1">
+        <h5 style="font-stretch: ultra-condensed;" class="pt-5 wmnSports"> Kids Sports</h5>
         <strong class="price" style="color: #e72e4c; font-size: 20px;"> 500 &#x20B9;</strong>
-        <ul class="star pl-5 pt-2">
+        <ul class="star pt-2">
           <li><a href="#"><img src="images/star-icon.png" class="img-fluid"></a></li>
           <li><a href="#"><img src="images/star-icon.png" class="img-fluid"></a></li>
           <li><a href="#"><img src="images/star-icon.png" class="img-fluid"></a></li>
@@ -217,20 +214,17 @@
           <li><a href="#"><img src="images/star-icon.png" class="img-fluid"></a></li>
         </ul>
       </div>
-      <div class="col-lg-6 newCOl1" style="padding-top: 100px; margin-top: 80px; background-color: #ededed;">
-        <img src="./images/shoes-img2.png" class="img-fluid mx-auto d-block" alt="img 2">
+      <div class="col-md-6 newCOl1 p-sm-5" style="padding-top: 100px; margin-top: 80px; background-color: #ededed;">
+        <img src="./images/shoes-img2.png" class="img-fluid" alt="img 2">
         <h5 style="font-stretch: ultra-condensed;" class="pt-5 menSports"> Men Sports</h5>
         <strong class="price" style="color: #2e2fdd; font-size: 20px;"> 400 &#x20B9;</strong>
-        <ul class="star pl-5 pt-2">
+        <ul class="star pt-2">
           <li><a href="#"><img src="images/star-icon.png" class="img-fluid"></a></li>
           <li><a href="#"><img src="images/star-icon.png" class="img-fluid"></a></li>
           <li><a href="#"><img src="images/star-icon.png" class="img-fluid"></a></li>
           <li><a href="#"><img src="images/star-icon.png" class="img-fluid"></a></li>
           <li><a href="#"><img src="images/star-icon.png" class="img-fluid"></a></li>
         </ul>
-        <center><button
-            style="background-color: #e72e4c; border: none; padding: 12px 25px;color: white; font-size: 25px;margin-top: 40px; margin-left: 35px;">Show
-            more</button></center>
       </div>
     </div>
   </div>
@@ -329,8 +323,8 @@
         </button></center>
     </div>
   </div>
-  <div class="container-fluid" style="margin-top: -50.02px;">
-    <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" height="200px" version="1.1" class="w-100"
+  <div class="container-fluid SvgContainer" style="margin-top: -50.02px;">
+    <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" ; height="200px" ; width="100%" ; version="1.1" ;
       xmlns="http://www.w3.org/2000/svg">
       <defs>
         <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
