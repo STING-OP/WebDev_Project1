@@ -3,19 +3,18 @@
   margin: 0;
   padding: 0;
 }
-
-body, html {
+body,html{
   overflow-x: hidden;
 }
 
-.navConatiner {
+.navConatiner{
   background-color: black;
 }
 
 .navbar {
   background-color: rgb(0, 0, 0);
   font-size: 1.3rem;
-
+  
 }
 
 li a {
@@ -29,10 +28,9 @@ li a {
 .navbar-nav>li>.dropdown-menu>a:hover {
   background-color: rgb(26, 24, 24);
 }
-
-@media screen and (min-width: 1200px) {
-  .home {
-    padding-left: 110px;
+@media screen and (min-width: 1200px){
+  .home{
+     padding-left: 110px;
   }
 }
 
@@ -54,25 +52,22 @@ li a {
   background-color: rgba(95, 83, 83, 0.514) !important;
   color: white !important;
 }
-
-.carousel-item>img {
-  vertical-align: 0px;
+.carousel-item>img{
+  vertical-align:0px;
 }
 
-@media screen and (max-width: 576px) {
-  .loginUl>li {
+@media screen and (max-width: 576px){
+  .loginUl>li{
     padding-top: 27px !important;
   }
-
-  .newCOl1 {
+  .newCOl1{
     margin-left: 15px !important;
     margin-right: 15px !important;
     min-height: 100px !important;
     float: right;
-  }
+  }  
 
 }
-
 .newCollection {
   margin-top: 80px !important;
 }
@@ -312,8 +307,7 @@ button:hover .button-text {
 .chatWindow {
   padding-top: 20px !important;
 }
-
-.SvgContainer {
+.SvgContainer{
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
