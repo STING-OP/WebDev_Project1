@@ -66,15 +66,7 @@ li a {
   }
 
   .sale {
-    display: flex;
-    flex-direction: column;
-    float: right;
-    padding-right: 20px;
-    font-size: 70px !important;
-  }
-
-  .img3 {
-    padding: 0px !important
+    display: none;
   }
 
   .img3>img {
