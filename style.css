@@ -36,14 +36,6 @@ li a {
   }
 }
 
-
-@media screen and (min-width: 1200px) {
-  .home {
-    padding-left: 110px;
-  }
-}
-
-
 .modal-footer {
   border-top: 0px !important;
 }
@@ -78,7 +70,24 @@ li a {
     float: right;
   }
 
+  .sale {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    padding-right: 20px;
+    font-size: 70px !important;
+  }
+
+  .img3 {
+    padding: 0px !important
+  }
+
+  .img3>img {
+    width: 100% !important;
+  }
+
 }
+
 
 .newCollection {
   margin-top: 80px !important;
@@ -124,7 +133,8 @@ li a {
 }
 
 .img3 {
-  padding: 70px !important;
+  padding: 70px;
+  text-align: center;
 }
 
 .jump {
