@@ -8,10 +8,6 @@ body, html {
   overflow-x: hidden;
 }
 
-.navConatiner {
-  background-color: black;
-}
-
 .navbar {
   background-color: rgb(0, 0, 0);
   font-size: 1.3rem;
